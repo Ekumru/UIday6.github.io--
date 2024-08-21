@@ -1,0 +1,137 @@
+
+.logo{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headlist>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+   
+    padding: 50px;
+    
+}
+.headlist>ul>li{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #3498DB
+    
+    
+}
+.search{
+    padding-top: 80px;
+    padding-left: 80px;
+    
+}
+.search>input{
+    width: 250px;
+    
+}
+.pp{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.pictures>img{
+    width: 100px;
+    height: 100px;
+}
+.middle{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(4,1fr);
+   gap: 40px;
+   margin-left: 30px;
+   margin-top:200px;
+   }
+   .about{
+    width: 450px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 300px;
+    
+   }
+   .pictures{
+    grid-row-start: 2;
+   }
+   .hobbies{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 10px;
+   }
+   button{
+    background-color: #FFD166;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+   }
+   .about,.location,.profile,.hobbies,.age,.look{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    
+    
+   }
+   p{
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#3498DB;
+   }
+   h1{
+    color:#05b888;
+   }
+ *{
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+ }
+ .name{
+    color: #FFD166;
+ }
+
+ @media (max-width: 768px){
+  
+    .middle{
+    
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+        
+    }
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+               
+        width: 100%;
+    }
+  
+    .headlist>ul>li{
+        margin-left: 0;
+        padding: 10px; 
+    }
+    .logo{
+        margin-left: 70px;
+    }
+    .button{
+        text-align: center;
+    }
+ }
